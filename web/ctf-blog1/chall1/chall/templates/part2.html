@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+{% block body %}
+<div class="jumbotron">
+
+    <h1 id="inctf-quals-the-savory-kick-start-of-a-roller-coaster-journey-">InCTF Quals : The savory kick-start of a
+        roller-coaster journey.</h1>
+    <p>In our last blog, we discussed what capture the flag competitions are and how to get started with CTFs. In this
+        blog, we will discuss about our experience of the online qualifiers of InCTF.</p>
+    <p>If you’ve missed the Intro to CTF and it’s types(Jeopardy and A-D style) check out our previous blog <a
+            href="/part1">Part 1/4.</a></p>
+    <p>Our very first experience of a CTF was awarded to us by one of our professors, Mrs. Anooja Joy who is an alumni
+        of Amrita Vishwa Vidyapeeth University.</p>
+    <blockquote>
+        <p>InCTF is India’s premier annual CTF organised by team bi0s, Amrita University. The competition consists of
+            two stages. The first stage is an online qualifier round, which is a jeopardy style CTF. Teams that stood in
+            the top 30 in the qualifiers are invited for the onsite Attack and Defence style CTF.</p>
+    </blockquote>
+    <h2 id="the-qualifier-round">The qualifier round</h2>
+    <p>The qualifier round was held on 6th and 7th of December 2018 for a period of 36 hours, in which 100+ teams from
+        all over India competed against one another. The problems were divided into five categories namely Web, Crypto,
+        Pwn, Reverse Engineering(RE) and Forensics.</p>
+    <p>The key aspect of cracking any challenge is to understand the main parts of the source code or executable
+        provided. Since this was the qualifier round, the challenges could be solved with a few basic tools such as md5
+        cracker, a disassembler (radare/IDA/ Hopper), hex-editors, binwalk, sound analyzer, etc. More important than the
+        various tools, is having a basic understanding of various concepts such as different ciphers (XOR, RSA, AES,
+        etc.), buffer overflows, steganography and SQL injection.</p>
+    <p><strong>A few tips and tricks for cracking web challenges:</strong></p>
+    <ul>
+        <li>
+            <p>Analyze the page using <a href="https://www.wappalyzer.com/">**Wappalyzer</a>**: It gives us a basic idea
+                of the technologies used in frontend and backend.</p>
+        </li>
+        <li>
+            <p>Check the source code for all the hints or comments using the developer tools tab.</p>
+        </li>
+        <li>
+            <p>Check if the program is server-side or local.</p>
+        </li>
+        <li>
+            <p>If necessary, use <strong>dirsearch</strong> or <a
+                    href="https://tools.kali.org/web-applications/dirbuster">**dirbuster</a>** to crawl over all the
+                directories. Some special webpages could be /.git, /.passwd, /.robots.</p>
+        </li>
+        <li>
+            <p>Sometimes a clue could be hidden in the response header.</p>
+        </li>
+    </ul>
+    <p><img src="https://cdn-images-1.medium.com/max/2000/0*cc_XbwvFrg_U3UP-.png" width="100%"
+            alt="A SQL command for SQL injection"><em>A SQL command for SQL injection</em></p>
+    <p><strong>A few tips and tricks for cracking crypto challenges:</strong></p>
+    <ul>
+        <li>
+            <p>First of all, identify the encoding of the crypto.</p>
+        </li>
+        <li>
+            <p>Try out the standard stream ciphers. (ROT13, XOR, Caeser, Vigenere, Substitution) <a
+                    href="https://cryptii.com/pipes/rot13-decoder">**Online Tool</a>**</p>
+        </li>
+        <li>
+            <p>Check for hints in the source code to identify the cipher.</p>
+        </li>
+        <li>
+            <p>Run various inputs to identify how the output changes based on the inputs.</p>
+        </li>
+        <li>
+            <p>The size of the key and the ciphertext can help in identifying the type of encryption and exploit to be
+                used.</p>
+        </li>
+        <li>
+            <p>Check for known exploit <a href="https://github.com/ashutosh1206/Crypton">**Link</a>**</p>
+        </li>
+    </ul>
+    <p><strong>A few tips and tricks for cracking pwn/RE challenges:</strong></p>
+    <ul>
+        <li>
+            <p>Using the file command check whether the file is stripped, non-stripped, static and dynamic linked.</p>
+        </li>
+        <li>
+            <p>Next, run the strings command and if you’re lucky then you’ll find the answer right here.</p>
+        </li>
+        <li>
+            <p>If you’re not lucky, then you’re in for a frustrating treat.</p>
+        </li>
+        <li>
+            <p>Run the executable file multiple times with different inputs and understand all the functionalities.</p>
+        </li>
+        <li>
+            <p>Check if you can cause a segmentation fault.</p>
+        </li>
+        <li>
+            <p>Disassemble the code using <a
+                    href="https://www.geeksforgeeks.org/gdb-step-by-step-introduction/">**GDB</a> <strong>for ELF files
+                    and [</strong>IDA](<a
+                    href="https://www.hex-rays.com/products/ida/index.shtml)**">https://www.hex-rays.com/products/ida/index.shtml)**</a>
+                for .exe file.</p>
+        </li>
+        <li>
+            <p>Analyze the assembly code using R2/<a href="https://www.hopperapp.com/">**Hopper</a>**.</p>
+        </li>
+    </ul>
+    <p><img src="https://cdn-images-1.medium.com/max/2708/0*EUcnGIYzb6Iglu5g.jpg" width="100%"
+            alt="Hopper Disassembler preview."><em>Hopper Disassembler preview.</em></p>
+    <p><strong>A few tips and tricks for cracking forensics challenges:</strong></p>
+    <ul>
+        <li>
+            <p>In forensics, a common practice is to encapsulate multiple files in each other, so the following commands
+                will help you to find the files and analyze them:</p>
+        </li>
+        <li>
+            <p>file <file_name>
+            </p>
+        </li>
+        <li>
+            <p>strings <file_name>
+            </p>
+        </li>
+        <li>
+            <p>binwalk -Mre <file_name>
+            </p>
+        </li>
+        <li>
+            <p>For analyzing the files, stegano tools, hex editors, file signatures, sound analyzers can be used.</p>
+        </li>
+    </ul>
+    <p><img src="https://cdn-images-1.medium.com/max/2000/0*obok0Ec6dHVo5Fb6" width="100%"
+            alt="Volatility command used to extract details from volatile memory(RAM)."><em>Volatility command used to
+            extract details from volatile memory(RAM).</em></p>
+    <p>To check out the contest details, <a href="https://inctf.in/">**Click Here</a>**</p>
+    <p>Finally, after a frustrating 24 hours and refreshing the scoreboard a million times (it was literally on
+        auto-refresh 😉), at the stroke of <strong>7 pm</strong> on <strong>7th</strong> December we stood
+        <strong>7th</strong> and qualified for the on-site final round at the Amrita Vishwa Vidyapeeth University,
+        Kerala, which was going to be an attack &amp; defense challenge.</p>
+    <p>If you are hooked up to our story then the next part of our journey is a must watch….. go to <a
+            href="/part3">Part 3/4</a> to live the moments we had.
+    </p>
+
+</div>
+{% endblock %}

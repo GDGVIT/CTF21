@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  example-chall:
+    restart: always
+    build: ./web/1nsp3ct0r
+    ports:
+      - "5011:80"
+  bunch-of-steps:
+    restart: always
+    build: ./misc/bunch-of-steps
+    ports:
+      - "5000:5000"
