@@ -2,7 +2,12 @@
 
 Tips: [How to run a CTF](https://github.com/pwning/docs/blob/master/suggestions-for-running-a-ctf.markdown)
 
-Link to Challenge ideas: 
+## Commit convention
+
+- `add-<challenge_name>-<difficulty_level>-<domain>`: Adding
+- `modify-<challenge_name>-<difficulty_level>-<domain>: ShortDescriptionAboutTheChangeMade`: Modifying
+- `remove-<challenge_name>-<difficulty_level>-<domain>: ReasonForRemoving`: Removing
+- `add-<challenge_name>-<difficulty_level>-<domain>: deployment`: Adding deployment config for the challenge
 
 ## Creating a challenge
 
