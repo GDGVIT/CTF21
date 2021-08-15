@@ -2,7 +2,7 @@
 
 **Author**: Anish Raghavendra
 
-Difficulty: Easy
+Difficulty: Medium
 
 Description:
 This might be a difficult question, but you can do it with your eyes closed.
