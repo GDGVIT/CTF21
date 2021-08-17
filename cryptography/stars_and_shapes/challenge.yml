@@ -4,7 +4,7 @@
 # Required sections
 name: "Stars and Shapes"
 author: "Anish Raghavendra"
-category: Forensics
+category: Cryptography
 description: >
     This might be a difficult question, but I'm sure you can do it with your eyes closed.
 
@@ -40,8 +40,7 @@ flags:
 # Can be removed if unused
 # Accepts strings
 tags:
-    - Steganography
-    - Forensics
+    - Cryptography
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
