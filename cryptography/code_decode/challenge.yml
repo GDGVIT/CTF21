@@ -15,13 +15,13 @@ description: >
   Sadly I realized that I lost the decryption program. I have the encryption program though. Do you think you can help 
   me out and decrypt this message for me?
 
-value: 650
+value: 600
 type: dynamic
 
 extra:
-  initial: 650
+  initial: 600
   decay: 50
-  minimum: 300
+  minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null

@@ -6,9 +6,9 @@ inputstring = input("Enter plaintext: ")
 def read_encryption_details():
     with open("cypher.txt") as file:
         encrypt_text = eval(file.read())
-        encryt_key = choice(list(encrypt_text.keys()))
-        character_key = encrypt_text[encryt_key]
-    return encryt_key, character_key
+        encrypt_key = choice(list(encrypt_text.keys()))
+        character_key = encrypt_text[encrypt_key]
+    return encrypt_key, character_key
 
 
 def create_encryption(character_key):
@@ -29,6 +29,7 @@ def convert_plaintext_to_cypher(inputstring, final_encryption, encrypt_key):
 
 encrypt_key, character_key = read_encryption_details()
 final_encryption = create_encryption(character_key)
-cypher_text = convert_plaintext_to_cypher(inputstring, final_encryption, encrypt_key)
+cypher_text = convert_plaintext_to_cypher(
+    inputstring, final_encryption, encrypt_key)
 
 print(cypher_text)
