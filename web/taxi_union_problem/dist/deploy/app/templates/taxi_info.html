@@ -1,0 +1,63 @@
+<head>
+	<title> Get taxi info </title>
+	<link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Anna Taxi Union</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<form method="post" action="/">
+					<div class="mb-3">
+						<label for="lisence_plate" class="form-label">Taxi Lisence Plate:</label>
+						<input type="text" class="form-control" id="lisence_plate" name="lisence_plate" aria-describedby="help">
+						<div id="lisence_plate" class="form-text">Enter the lisence plate of the taxi you want to find</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+		{% if taxi %}
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Lisence Plate</th>
+					<th scope="col">Drivers name</th>
+					<th scope="col">Phone Number</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in taxi %}
+				<tr>
+					<th scope="row">{{i[0]}}</th>
+					<td>{{i[1]}}</td>
+					<td>{{i[2]}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</div>
+		{% endif %}
+
+		{% if error %}
+		<div class="alert alert-danger" role="alert">
+			An error has occured
+		</div>
+		{% endif %}
+
+		{% if no_value %}
+		<div class="alert alert-danger" role="alert">
+			Taxi not found
+		</div>
+		{% endif %}
+	</div>
+
+</body>
+
