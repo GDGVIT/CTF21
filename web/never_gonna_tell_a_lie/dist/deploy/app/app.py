@@ -1,19 +1,21 @@
 from flask import Flask,render_template,send_from_directory,request,g
-import sqlite3
+import mysql.connector
 import os
 
-
 def get_db():
-    path = os.path.dirname(os.path.abspath(__file__))
-    DATABASE = os.path.join(path, 'database.db')
-    print(DATABASE)
     db = getattr(g,'_database',None)
     if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
+        db = g._database = mysql.connector.connect(
+                host=os.environ.get("SQL_HOST"),
+                port=os.environ.get("SQL_PORT"),
+                user=os.environ.get("SQL_USER"),
+                password=os.environ.get("SQL_PASSWORD"),
+                database=os.environ.get("SQL_DATABASE"))
     return db
 
 def query_db(query, args=(), one=False):
-    cur = get_db().execute(query, args)
+    cur = get_db().cursor(buffered=True)
+    cur.execute(query, args)
     rv = cur.fetchall()
     cur.close()
     return (rv[0] if rv else None) if one else rv
