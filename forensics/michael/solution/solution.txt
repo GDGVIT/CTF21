@@ -1,0 +1,9 @@
+flag: dsc{LOC-888-481-90TO?} or dsc{LOC-888-481-90TO}
+
+Solution:
+    1) Download image, browse through bit planes
+    2) When the message is found, open spotify scanner and read the code
+    3) Watch the official youtube music video of the song with closed captions turned on
+    4) Find code at 1:19, enclose in flag
+
+This code for the video can also be found while searching for lore about the song on google.
