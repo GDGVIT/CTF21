@@ -8,13 +8,13 @@ category: Web
 description: >
   A quick teaser to get yourself ready for the challenges to come!
   Just look for/at the flag and perhaps try your hand at some frontend tomfoolery?
-value: 200
+value: 250
 type: dynamic
 
 extra:
-  initial: 200
-  decay: 30
-  minimum: 100
+  initial: 250
+  decay: 60
+  minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
