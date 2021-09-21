@@ -10,13 +10,13 @@ description: >
   Can you figure it out? Julie would really appreciate it. Here's how his desktop looked like.
   <br> <br> Wrap the flag that you find with dsc{\<flag\>}!
 
-value: 500
+value: 450
 type: dynamic
 
 extra:
-  initial: 500
+  initial: 450
   decay: 30
-  minimum: 50
+  minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null

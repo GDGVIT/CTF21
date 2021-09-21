@@ -13,7 +13,7 @@ type: dynamic
 
 extra:
     initial: 450
-    decay: 30
+    decay: 45
     minimum: 150
 
 # Settings used for Dockerfile deployment
