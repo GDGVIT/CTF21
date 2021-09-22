@@ -1,0 +1,22 @@
+flag: dsc{y0u_4r3_g00d_4t_wh4t_y0u_d0}
+
+Solution:
+    1) Study the code and understand the encryption process
+        -> A file called cypher.txt is read, and evaluated into a dictionary
+        -> from the dictionary's keys, one is chosen as random
+        -> once the key is chosen, the corresponding values are also aquired
+        -> Next, the aquired values are assigned to each letter in the alphabet
+            Ex: a->k, b->y, c->e etc
+           to generate its own "language" that plaintext can be translated to
+        -> Plaintext is then converted to this new "language" that was generated above
+        -> IMPORTANT: The last step is when, after encoding, the key that can decode this is split into two parts
+        -> one part is prepended to the encoded string, the other is appended to the resultant string
+            Final cypher text = <key part 1><encoded text><key part 2>
+    2) Write a decrypter
+        -> Take cyphertext as input
+        -> take first three characters from the string and last three characters from the string
+        -> these 6 characters make the key
+        -> read "cypher.txt" and find the value for the key that was made in the last step
+        -> using the values, assign each character in the value to the respective alphabet
+            Ex: k->a, y->b, e->c
+        -> using this decoder, pass the cyphertext and generate plaintext to get the key
