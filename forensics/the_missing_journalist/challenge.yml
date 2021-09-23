@@ -3,22 +3,22 @@
 
 # Required sections
 name: "The Missing Journalist"
-author: "Anish Raghavendra"
+author: "z404"
 category: Forensics
 description: >
-    It's been a year since you've been a private investigator and you've made quite a name for yourself. You sit there thinking
-    about all the weird cases you've managed in the last year when suddenly, a person bursts through your door saying something
-    about her missing husband. You finally gather that her husband, a renowned journalist who was tracking down a serial killer
-    has suddenly gone missing since last night. The hysterical wife has provided you with a picture of how he looks like. Do you
-    take the case?
+  It's been a year since you've been a private investigator and you've made quite a name for yourself. You sit there thinking
+  about all the weird cases you've managed in the last year when suddenly, a person bursts through your door saying something
+  about her missing husband. You finally gather that her husband, a renowned journalist who was tracking down a serial killer
+  has suddenly gone missing since last night. The hysterical wife has provided you with a picture of how he looks like. Do you
+  take the case?
 
 value: 250
 type: dynamic
 
 extra:
-    initial: 250
-    decay: 60
-    minimum: 150
+  initial: 250
+  decay: 60
+  minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
@@ -36,19 +36,19 @@ attempts: 0
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - dsc{1_f0und_h1m_4nd_h35_my_fr13nd}
+  - dsc{1_f0und_h1m_4nd_h35_my_fr13nd}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
 # Can be removed if unused
 # Accepts strings
 tags:
-    - Forensics
+  - Forensics
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-    - dist/the_journalist.gif
+  - dist/the_journalist.gif
 
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.
@@ -72,7 +72,7 @@ files:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0

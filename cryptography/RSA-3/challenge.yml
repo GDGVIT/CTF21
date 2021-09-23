@@ -3,7 +3,7 @@
 
 # Required sections
 name: "RSA - 3"
-author: "Anish Raghavendra"
+author: "z404"
 category: Cryptography
 description: >
   Alright, this is the big leagues. You have someone's Public Key. This isn't unusual, if you want to send someone an encrypted message,
@@ -71,7 +71,7 @@ files:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0

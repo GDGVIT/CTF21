@@ -3,7 +3,7 @@
 
 # Required sections
 name: "Please"
-author: "Anish Raghavendra"
+author: "z404"
 category: Web
 description: >
   Hi there! We used to work together back in our old company DEEMA. I recently had a problem with my computer and lost all the files on it.
@@ -70,7 +70,7 @@ tags:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0

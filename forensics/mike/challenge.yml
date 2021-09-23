@@ -3,7 +3,7 @@
 
 # Required sections
 name: "Mike"
-author: "Anish Raghavendra"
+author: "z404"
 category: Forensics
 description: >
   Julia has come to you to ask for help. After spending too much time on his computer, Mike has gone insane, but no one knows why. 
@@ -72,7 +72,7 @@ files:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0

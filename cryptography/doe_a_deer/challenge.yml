@@ -3,7 +3,7 @@
 
 # Required sections
 name: "Doe, a deer"
-author: "Anish Raghavendra"
+author: "z404"
 category: Cryptography
 description: >
   Mark, a very gifted musician, is suddenly missing after his music class. He is said to have been upset after turning in his assignment.
@@ -70,7 +70,7 @@ files:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0
