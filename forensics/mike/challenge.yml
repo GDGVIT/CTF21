@@ -2,12 +2,12 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Michael"
+name: "Mike"
 author: "Anish Raghavendra"
 category: Forensics
 description: >
-  Julie has come to you to ask for help. After spending too much time on his computer, Michael's gone insane, but no one knows why. 
-  Can you figure it out? Julie would really appreciate it. Here's how his desktop looked like.
+  Julia has come to you to ask for help. After spending too much time on his computer, Mike has gone insane, but no one knows why. 
+  Can you figure it out? Julia would really appreciate it. Here's how his desktop looked like.
   <br> <br> Wrap the flag that you find with dsc{\<flag\>}!
 
 value: 450
