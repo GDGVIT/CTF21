@@ -2,11 +2,12 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Hungry Man"
+name: "Dora the Explorer"
 author: "AgentAce"
-category: Web
+category: OSINT
 description: >
-     There is nothing here I promise! ;)
+    Hi, I am Dora the Explorer and I love exploring as you know ;) (after all 1+1=0), and I recently found this place which has an a very cool looking attraction to it. Plus they post about it on social media all the time. You all should see this too sometime!!!
+
 
 value: 450
 type: dynamic
@@ -21,7 +22,7 @@ extra:
 # If you have a Dockerfile set to .
 # If you have an imaged hosted on Docker set to the image url (e.g. python/3.8:latest, registry.gitlab.com/python/3.8:latest)
 # Follow Docker best practices and assign a tag
-image: hungryman/.
+image: null
 
 # Optional settings
 # Can be removed if unused
@@ -32,31 +33,23 @@ attempts: 0
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - dsc{91v3_m3_4_h4ndfu1_0f_c00k135}
+    - dsc{1m4g3s_h1d3_4l0t_s0_b3_c4r3fu1}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
 # Can be removed if unused
 # Accepts strings
 tags:
-    - web
+    - osint
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
-# files:
-#     - dist/chall.py
-
+files:
+    - dist/image.zip
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.
 # Can be removed if unused
 # Accepts dictionaries or strings
-# hints:
-#     - {
-#         content: "This hint costs points",
-#         cost: 10
-#     }
-#     - This hint is free
-
 # Requirements are used to make a challenge require another challenge to be
 # solved before being available.
 # Can be removed if unused
