@@ -1,0 +1,50 @@
+<head>
+	<title> The Gate Keeper</title>
+	<link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">The Gate Keeper</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<p class="lead">
+  					I am the gate keeper. I gaurd gate that protects that what you want most. Enter the password to open the gate.	
+				</p>
+				<form method="post" action="/">
+					<div class="mb-3">
+						<label for="password" class="form-label">Password:</label>
+						<input type="text" class="form-control" id="password" name="password" >
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+		{% if value %}
+		<div class="alert alert-success" role="alert">
+			The flag for the CTF is the password you entered.(If you havent cheated that is)
+		</div>
+		{% endif %}
+
+		{% if error %}
+		<div class="alert alert-danger" role="alert">
+			An error has occured
+		</div>
+		{% endif %}
+
+		{% if no_value %}
+		<div class="alert alert-danger" role="alert">
+			The password you entered is wrong
+		</div>
+		{% endif %}
+	</div>
+
+</body>
+

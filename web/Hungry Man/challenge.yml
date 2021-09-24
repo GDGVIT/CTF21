@@ -3,18 +3,18 @@
 
 # Required sections
 name: "Hungry Man"
-author: "Vishesh Bansal"
+author: "AgentAce"
 category: Web
 description: >
      There is nothing here I promise! ;)
 
-value: 600
+value: 450
 type: dynamic
 
 extra:
-    initial: 600
-    decay: 30
-    minimum: 200
+    initial: 450
+    decay: 45
+    minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
