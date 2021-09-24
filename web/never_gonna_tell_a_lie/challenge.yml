@@ -7,13 +7,13 @@ author: "Techhacker101"
 category: Web
 description: >
         Trust me, take everything in the home page for face value. I would never lie to you.        
-value: 500
+value: 250 
 type: dynamic
 
 extra:
-    initial: 500
-    decay: 30
-    minimum: 50
+    initial: 250
+    decay: 60
+    minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null

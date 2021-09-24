@@ -10,13 +10,13 @@ description: >
         All we could get is a network capture of his private network.Can you find any evidence to be used against him \? 
 
 
-value: 100
-type: standard
+value: 250
+type: dynamic
 
-#extra:
-#   initial: 500
-#    decay: 30
-#    minimum: 50
+extra:
+    initial: 250 
+    decay: 60
+    minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null

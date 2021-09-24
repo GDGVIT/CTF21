@@ -10,13 +10,13 @@ description: >
         Since this package is required for a time sensitive matter we don't have time to negotiate with the union.<br><br>
         Your task is to obtain the location of the taxi using the given information<br>
         `Taxi Lisence Plate: TN-06-AP-9879`
-value: 500
+value: 450 
 type: dynamic
 
 extra:
-    initial: 500
-    decay: 30
-    minimum: 50
+    initial: 450
+    decay: 45
+    minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
