@@ -1,0 +1,23 @@
+flag = dsc{th15_15_w4y_t00_much_w0rk}
+
+Solution:
+  0. The main thing to do, is just follow the clues with the headers here
+  1. GET request won't work here, so try POST next
+  2. Hint: 'perhaps try Googling me instead?'
+    Change 'Referer' to 'https://www.google.com'
+  3. Hint: 'did you attend that lovely dinner party Hosted by dscvit?'
+    Change 'Host' to contain 'dscvit' (eg: dscvit.com)
+  4. Hint: 'potates and carrots are my friends, milk and Cookies will be my end'
+    Run curl with -v to make it verbose. You'll see there's a cookie {user: anon}
+    Change the user to 'root' (implied by potatoes and carrots)
+  5. Hint: 'JFATHER, JMOTHER, JDAUGHTER, ____?'
+    Change 'Content-Type' to 'application/json'
+  6. Hint: "{'error': 'json data missing'}"
+    Include empty data {} in the parameters
+  7. Hint: "{'error': {'messi': 'required'}}"
+    Include data {'messi':''} as a parameter
+  8. Hint: "{'error': {'messi': 'which club am i at?'}}"
+    Include data {'messi':'psg'} or {'messi':'paris'} as a parameter
+  9. The flag is yours
+
+curl -v -H 'Referer: https://www.google.com' -H 'Host: dscvit.com' -b user=root -H 'Content-Type: application/json' --data '{"messi":"psg"}' -X POST http://127.0.0.1:5000

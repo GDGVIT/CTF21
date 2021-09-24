@@ -1,0 +1,6 @@
+flag = dsc{1m4g1n3_l1nux_0n_4n_xb0x}
+
+Solution:
+  1. The website shows a pictures of the xbox logo and the linux penguin
+  2. Send a request while changing the 'User Agent' header to include both 'Xbox' and 'Linux' and the flag will be displayed
+  3. If you send a request with only one but not the other, only the missing one will be displayed.
