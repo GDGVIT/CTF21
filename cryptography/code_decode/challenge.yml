@@ -3,7 +3,7 @@
 
 # Required sections
 name: "Code Decode"
-author: "Anish Raghavendra"
+author: "z404"
 category: Cryptography
 description: >
   Around 5 years ago, I made this <b>killer</b> program that encodes the string into a cyphertext. The unique feature 
@@ -20,7 +20,7 @@ type: dynamic
 
 extra:
   initial: 600
-  decay: 50
+  decay: 30
   minimum: 150
 
 # Settings used for Dockerfile deployment
@@ -77,7 +77,7 @@ files:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0

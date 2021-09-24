@@ -2,20 +2,19 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "The Conspiracy"
+name: "RSA - 2"
 author: "z404"
 category: Cryptography
 description: >
-  There was once a sailor. He was a quirky old man. He said many many things, and most of what he said never made sense to anyone.
-  He considered himself ahead of his time, and said that the people of his time were unworthy of his wisdom. Soon he was lost to the ages,
-  but his diary wasn't. Are you worthy of decoding wisdom?
+  Hey I heard you have a supercomputer at home. This is taking too long to compute on my computer.
+  Could you take a look on yours? I'm sure its a lot more precise than mine is, and faster too!
 
-value: 250
+value: 450
 type: dynamic
 
 extra:
-  initial: 250
-  decay: 60
+  initial: 450
+  decay: 45
   minimum: 150
 
 # Settings used for Dockerfile deployment
@@ -34,20 +33,19 @@ attempts: 0
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-  - dsc{flat_be_the_earth}
-  - dsc{FLAT_BE_THE_EARTH}
+  - dsc{t0-m355-w1th-m4th-t4k35-4-l0t-0f-sp1n3}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
 # Can be removed if unused
 # Accepts strings
 tags:
-  - Cyptography
+  - Cryptography
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-  - dist/diary.txt
+  - dist/supercomputer_food
 
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.

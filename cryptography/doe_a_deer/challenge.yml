@@ -3,19 +3,19 @@
 
 # Required sections
 name: "Doe, a deer"
-author: "Anish Raghavendra"
+author: "z404"
 category: Cryptography
 description: >
   Mark, a very gifted musician, is suddenly missing after his music class. He is said to have been upset after turning in his assignment.
   He had worked very hard on it, it was his first original. Here, you can see his work. I'm sure you can find him, he wouldn't have gone far.
 
-value: 500
+value: 600
 type: dynamic
 
 extra:
-  initial: 500
+  initial: 600
   decay: 30
-  minimum: 50
+  minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
@@ -70,7 +70,7 @@ files:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: visible
+state: hidden
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0

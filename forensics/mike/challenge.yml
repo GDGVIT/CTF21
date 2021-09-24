@@ -2,20 +2,20 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "The Conspiracy"
+name: "Mike"
 author: "z404"
-category: Cryptography
+category: Forensics
 description: >
-  There was once a sailor. He was a quirky old man. He said many many things, and most of what he said never made sense to anyone.
-  He considered himself ahead of his time, and said that the people of his time were unworthy of his wisdom. Soon he was lost to the ages,
-  but his diary wasn't. Are you worthy of decoding wisdom?
+  Julia has come to you to ask for help. After spending too much time on his computer, Mike has gone insane, but no one knows why. 
+  Can you figure it out? Julia would really appreciate it. Here's how his desktop looked like.
+  <br> <br> Wrap the flag that you find with dsc{\<flag\>}!
 
-value: 250
+value: 450
 type: dynamic
 
 extra:
-  initial: 250
-  decay: 60
+  initial: 450
+  decay: 30
   minimum: 150
 
 # Settings used for Dockerfile deployment
@@ -34,20 +34,21 @@ attempts: 0
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-  - dsc{flat_be_the_earth}
-  - dsc{FLAT_BE_THE_EARTH}
+  - dsc{LOC-888-481-90TO?}
+  - dsc{LOC-888-481-90TO}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
 # Can be removed if unused
 # Accepts strings
 tags:
-  - Cyptography
+  - Forensics
+  - OSINT
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-  - dist/diary.txt
+  - dist\desktop_wallpaper.png
 
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.
