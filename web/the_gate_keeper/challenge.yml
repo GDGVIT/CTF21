@@ -7,13 +7,13 @@ author: "Techhacker101"
 category: Web
 description: >
         That what you want is with the Gate keeper, but you need to cheat the Gate keeper to get it.
-value: 500
+value: 600
 type: dynamic
 
 extra:
-    initial: 500
+    initial: 600
     decay: 30
-    minimum: 50
+    minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null

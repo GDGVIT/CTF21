@@ -7,13 +7,13 @@ author: "Techhacker101"
 category: Web
 description: >
        We recently launched a mass email sender that can work with any SMTP server, but recently we have reports of information leaks and and trolling through our service. Can you find whats wrong with it ? 
-value: 500
+value: 600 
 type: dynamic
 
 extra:
-    initial: 500
+    initial: 600
     decay: 30
-    minimum: 50
+    minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null

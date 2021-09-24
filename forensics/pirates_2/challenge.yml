@@ -8,12 +8,12 @@ category: forensics
 description: >
                 Mr.Reed's distribution network is back at it again, but he has completely changed his methods of distribution.Can you figure out the new method of distribution ? 
 
-value: 450
+value: 600 
 type: dynamic
 
 extra:
-    initial: 450
-    decay: 45
+    initial: 600
+    decay: 30
     minimum: 150
 
 # Settings used for Dockerfile deployment
