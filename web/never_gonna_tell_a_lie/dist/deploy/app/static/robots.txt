@@ -1,0 +1,3 @@
+User-agent:*
+Disallow:/static/
+Disallow:/never_gonna_give_you_up/

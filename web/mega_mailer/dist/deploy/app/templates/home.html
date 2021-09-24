@@ -1,0 +1,73 @@
+<head>
+	<title>Mega Mailer</title>
+	<link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mega Mailer</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<p class="lead">
+					Enter details of the SMTP server and recipitents you want to mass mail to 
+				</p>
+				<form method="post" action="/" enctype="multipart/form-data">
+					<div class="mb-3">
+						<div class="form-group">
+						<label for="smtp_host" class="form-label">SMTP Host:</label>
+						<input type="text" class="form-control" id="smtp_host" name="smtp_host" >
+						</div>
+						<div class="form-group">
+						<label for="smtp_port" class="form-label">SMTP Port:</label>
+						<input type="text" class="form-control" id="smtp_port" name="smtp_port" >
+						</div>
+						<div class="form-group">
+						<label for="from_addr" class="form-label">From address:</label>
+						<input type="email" class="form-control" id="from_addr" name="from_addr" >
+						</div>
+						<div class="form-group">
+						<label for="recipitents" class="form-label">Recipients CSV:</label>
+						<input type="file" class="form-control" id="recipitents" name="recipitents" >
+						</div>
+						<div class="form-group">
+						<label for="body" class="form-label">Mail body:</label>
+						<textarea id="body" name="body">{% raw %}{{value1}}{% endraw %}</textarea>
+						</div>
+
+
+
+
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				<a href="{{url_for('static',filename='recipitents.csv')}}">Example CSV</a>
+			</div>
+		</div>
+		{% if value %}
+		<div class="alert alert-success" role="alert">
+			The flag for the CTF is the password you entered.(If you havent cheated that is)
+		</div>
+		{% endif %}
+
+		{% if error %}
+		<div class="alert alert-danger" role="alert">
+			An error has occured
+		</div>
+		{% endif %}
+
+		{% if no_value %}
+		<div class="alert alert-danger" role="alert">
+			The password you entered is wrong
+		</div>
+		{% endif %}
+	</div>
+
+</body>
+
