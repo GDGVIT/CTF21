@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  never_gonna_tell_a_lie:
+    restart: always
+    build: ./never_gonna_tell_a_lie/dist/deploy
+    ports:
+      - "4200:5000"
+
+  taxi_union_problem:
+    restart: always
+    build: ./taxi_union_problem/dist/deploy
+    ports:
+      - "1159:5000"
+
+  the_gate_keeper:
+    restart: always
+    build: ./the_gate_keeper/dist/deploy
+    ports:
+      - "7777:5000"
