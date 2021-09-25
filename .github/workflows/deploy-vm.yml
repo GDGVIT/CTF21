@@ -18,5 +18,5 @@ jobs:
               ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip sudo rm -rf /home/ec2-user/ctfchal
               ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip git clone https://$GIT_SECRET:$GIT_SECRET@github.com/mayankkumar2/CTF21 --no-local /home/ec2-user/ctfchal
               ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip "cd /home/ec2-user/ctfchal/web; docker-compose build"
-              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip "cd /home/ec2-user/ctfchal/web; docker-compose up"
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip "cd /home/ec2-user/ctfchal/web; docker-compose up -d"
             done
