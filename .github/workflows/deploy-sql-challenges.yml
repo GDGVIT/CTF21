@@ -1,4 +1,4 @@
-name: DeployChallenges
+name: DeploySQLChallenges
 on: [push]
 jobs:
   deploy:
