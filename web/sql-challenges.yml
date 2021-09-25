@@ -5,15 +5,30 @@ services:
     build: ./never_gonna_tell_a_lie/dist/deploy
     ports:
       - "4200:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   taxi_union_problem:
     restart: always
     build: ./taxi_union_problem/dist/deploy
     ports:
       - "1159:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   the_gate_keeper:
     restart: always
     build: ./the_gate_keeper/dist/deploy
     ports:
       - "7777:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m

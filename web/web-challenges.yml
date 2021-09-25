@@ -5,57 +5,107 @@ services:
     build: ./curly_fries_1/src
     ports:
       - "6017:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
   
   curly_fries_2:
     restart: always
     build: ./curly_fries_2/src
     ports:
       - "6240:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   curly_fries_3:
     restart: always
     build: ./curly_fries_3/src
     ports:
       - "6420:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   heres_a_flag:
     restart: always
     build: ./heres_a_flag/src
     ports:
       - "1842:80"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   hungry_man:
     restart: always
     build: ./hungry_man/hungryman
     ports:
       - "1922:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   mega_mailer:
     restart: always
     build: ./mega_mailer/dist/deploy
     ports:
       - "6969:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   never_gonna_tell_a_lie:
     restart: always
     build: ./never_gonna_tell_a_lie/dist/deploy
     ports:
       - "4200:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   please:
     restart: always
     build: ./please/please
     ports:
       - "4421:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   taxi_union_problem:
     restart: always
     build: ./taxi_union_problem/dist/deploy
     ports:
       - "1159:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
 
   the_gate_keeper:
     restart: always
     build: ./the_gate_keeper/dist/deploy
     ports:
       - "7777:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 3
+            max-size: 10m
