@@ -1,0 +1,21 @@
+name: DeployChallenges
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        env:
+          IP_ADDRESSES: ${{ secrets.CHALLIPS }}
+          PRIV_KEY: ${{ secrets.PRIVKEY }}
+          GIT_SECRET: ${{ secrets.GITSECRET }}
+        run: |
+            export IFS=";"
+            echo $PRIV_KEY > cert.pem
+            chmod 400 cert.pem
+            for ip in $IP_ADDRESSES; do
+              echo $ip
+              ssh -i cert.pem ec2-user@$ip git clone https://$GIT_SECRET:$GIT_SECRET@github.com/mayankkumar2/CTF21 --no-local $HOME/ctfchal
+              ssh -i cert.pem ec2-user@$ip cd $HOME/ctfchal/web && docker-compose build
+              ssh -i cert.pem ec2-user@$ip cd $HOME/ctfchal/web && docker-compose up
+            done
