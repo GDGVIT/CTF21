@@ -15,7 +15,7 @@ jobs:
             chmod 400 cert.pem
             for ip in $IP_ADDRESSES; do
               echo $ip
-              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip git clone https://$GIT_SECRET:$GIT_SECRET@github.com/mayankkumar2/CTF21 --no-local $HOME/ctfchal
-              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip cd $HOME/ctfchal/web && docker-compose build
-              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip cd $HOME/ctfchal/web && docker-compose up
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip git clone https://$GIT_SECRET:$GIT_SECRET@github.com/mayankkumar2/CTF21 --no-local /home/ec2-user/ctfchal
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip cd /home/ec2-user/ctfchal/web && docker-compose build
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip cd /home/ec2-user/ctfchal/web && docker-compose up
             done
