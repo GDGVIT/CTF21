@@ -1,20 +1,18 @@
 from flask import Flask,render_template,send_from_directory,request,g
-import mysql.connector
+import sqlite3
 import os
 
 def get_db():
     db = getattr(g,'_database',None)
+    directory = os.getcwd()
+    uri = f'file:/{directory}/database.db?mode=ro'
+    print(uri)
     if db is None:
-        db = g._database = mysql.connector.connect(
-                host=os.environ.get("SQL_HOST"),
-                port=os.environ.get("SQL_PORT"),
-                user=os.environ.get("SQL_USER"),
-                password=os.environ.get("SQL_PASSWORD"),
-                database=os.environ.get("SQL_DATABASE"))
+        db = g._database = sqlite3.connect(uri, uri=True)
     return db
 
 def query_db(query, args=(), one=False):
-    cur = get_db().cursor(buffered=True)
+    cur = get_db().cursor()
     cur.execute(query, args)
     rv = cur.fetchall()
     cur.close()
