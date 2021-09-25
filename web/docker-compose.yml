@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 services:
   curly_fries_1:
     restart: always
