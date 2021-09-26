@@ -23,6 +23,8 @@ extra:
 image: null
 
 # Optional settings
+connection_info: "3.110.11.154:6969"
+
 # Can be removed if unused
 attempts: 0
 

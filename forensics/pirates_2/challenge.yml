@@ -4,7 +4,7 @@
 # Required sections
 name: "Pirates 2"
 author: "Techhacker"
-category: forensics
+category: Forensics
 description: >
                 Mr.Reed's distribution network is back at it again, but he has completely changed his methods of distribution.Can you figure out the new method of distribution ? 
 
@@ -25,7 +25,7 @@ image: null
 host: null
 
 # Optional settings
-
+connection_info: "3.108.1.193:6009"
 
 # Can be removed if unused
 attempts: 0
