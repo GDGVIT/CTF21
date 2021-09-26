@@ -6,15 +6,16 @@ name: "Teg Rads"
 author: "Leplin"
 category: Forensics
 description: >
-  Most of the times, what you seek is deep within the user.
-  It starts with a writer, carries on with an actor and ends with a producer.
+    Most of the times, what you seek is deep within the user.
+    It starts with a writer, carries on with an actor and ends with a producer.
+
 value: 600
 type: dynamic
 
 extra:
   initial: 600
   decay: 30
-  minimum: 150
+  minimum: 250
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
@@ -52,7 +53,7 @@ files:
 # required but can be nice.
 # Can be removed if unused
 # Accepts dictionaries or strings
-# hints:
+hints:
     - {
         content: "Vigenere >> Caesar",
         cost: 50

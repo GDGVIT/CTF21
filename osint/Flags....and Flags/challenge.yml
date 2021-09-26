@@ -9,11 +9,11 @@ description: >
     The Co-Founder Of Spike music loves flags, and he loves to hide them in plain sight. Find it!
 
 
-value: 300
+value: 250
 type: dynamic
 
 extra:
-    initial: 300
+    initial: 250
     decay: 60
     minimum: 150
 

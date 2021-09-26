@@ -7,12 +7,12 @@ author: "AHF"
 category: OSINT
 description: >
   We've been listening and we've heard this group can write decent code (ahem ahem), but what have they been listening to?
-value: 600
+value: 450
 type: dynamic
 
 extra:
-  initial: 600
-  decay: 30
+  initial: 450
+  decay: 45
   minimum: 150
 
 # Settings used for Dockerfile deployment

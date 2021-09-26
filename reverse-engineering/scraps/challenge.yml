@@ -4,19 +4,19 @@
 # Required sections
 name: "Scraps"
 author: "Techhacker"
-category: Binary
+category: Reverse Engineering
 description: >
         One of our coders have locked down an application that is scheduled to be released tommorow.<br/>
         Can you unlock the application as soon as possible.<br/> 
 
 
-value: 200
-type: standard
+value: 250
+type: dynamic
 
-#extra:
-#   initial: 500
-#    decay: 30
-#    minimum: 50
+extra:
+  initial: 250
+  decay: 60
+  minimum: 150
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
@@ -25,10 +25,6 @@ type: standard
 # Follow Docker best practices and assign a tag
 image: null
 host: null
-
-# Optional settings
-
-connection_info: "nc 127.0.0.1 8080"
 
 # Can be removed if unused
 attempts: 0

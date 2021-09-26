@@ -9,13 +9,13 @@ description: >
     Hi, I am Dora the Explorer and I love exploring as you know ;) (after all 1+1=0), and I recently found this place which has an a very cool looking street art to it. Plus they posted about it on social media many a times. You all should see this too sometime!!!
 
 
-value: 450
+value: 600
 type: dynamic
 
 extra:
-    initial: 450
-    decay: 45
-    minimum: 150
+    initial: 600
+    decay: 30
+    minimum: 250
 
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
