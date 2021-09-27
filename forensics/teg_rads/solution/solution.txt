@@ -1,0 +1,22 @@
+flag = dsc{publ1c_d15pl4y_0f_ff3ct10n_b4nn3d}
+
+Solution:
+  0. Line 420 of the raw data says there are 5 pieces to the puzzle
+  1. The first part is located at line 69, which tells you not to escape from javascript.
+    This implies running unescape() in javascript.
+    unescape("%64%73%63%7B%70%75%62%6C%31%63_")
+    Run it to get: 'dsc{publ1c_'
+  2. The second part is again js, located after the EOF, i.e. right at the end
+    (23958575899).toString(35) + String.fromCharCode(0x5F)
+    Run it to get: 'd15pl4y_'
+  3. The third part is in Keywords but wont be found by looking at properties
+    At properties, Keywords says (third section should be right here), so keep looking
+    CTRL+F to look for this and you'll find Keywords: (110000 1100110 1011111)
+    Convert from binary to decimal to ASCII to get '0f_'
+  4. If you unzip the file or use winRar or whatever, you'll find p4.txt
+    It says Caesar wasn't smart enough, implying a vigenere decode
+    It also says the key is our creator which in the metadata is "alexa"
+    Use this to get 'ff3ct10n_'
+  5. The original hint says that "...producers always get the final say"
+    Decrypt the base64 in the Producer metatag to get 'b4nn3d}'
+  6. Put it all together to get your flag.

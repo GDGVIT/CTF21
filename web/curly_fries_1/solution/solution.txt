@@ -1,0 +1,5 @@
+flag = dsc{1_l0v3_sw3d3n}
+
+Solution:
+  1. The website shows a pictures of Swedish things in the shape of a Swedish flag
+  2. Send a request while changing the 'Accept-Language' header to 'sv-SE' and the flag will be displayed

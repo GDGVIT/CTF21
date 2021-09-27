@@ -1,0 +1,22 @@
+name: DeploySQLChallenges
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        env:
+          IP_ADDRESSES: ${{ secrets.SQLVMIPS }}
+          PRIV_KEY: ${{ secrets.PRIVKEY }}
+          GIT_SECRET: ${{ secrets.GITSECRET }}
+        run: |
+            export IFS=";"
+            echo $PRIV_KEY > cert.pem
+            chmod 400 cert.pem
+            for ip in $IP_ADDRESSES; do
+              echo $ip
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip sudo rm -rf /home/ec2-user/ctfchal
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip git clone https://$GIT_SECRET:$GIT_SECRET@github.com/GDGVIT/CTF21 --no-local /home/ec2-user/ctfchal
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip "cd /home/ec2-user/ctfchal/web; docker-compose -f sql-challenges.yml build"
+              ssh -o StrictHostKeyChecking=no -i cert.pem ec2-user@$ip "cd /home/ec2-user/ctfchal/web; docker-compose -f sql-challenges.yml up -d"
+            done

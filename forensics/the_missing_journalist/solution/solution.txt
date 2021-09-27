@@ -1,0 +1,9 @@
+flag: dsc{1_f0und_h1m_4nd_h35_my_fr13nd}
+
+password: h3_w45_l45t_s33n_4t_th4_m0v135
+base64(password): aDNfdzQ1X2w0NXRfczMzbl80dF90aDRfbTB2MTM1
+
+Solution:
+	1) Use exiftool and find the key under the "Rights" Category
+	2) Use binwalk and extract the zipfile. Unzip it to find a password locked pdf
+	3) Use the key to unlock pdf and obtain flag

@@ -1,0 +1,6 @@
+flag = dsc{d0nt_m355_w1th_4t0m_h34rt_f4th3r}
+
+Solution:
+  1. Scroll through each member's tweets till you get to this one by Vishesh (https://twitter.com/VisheshBansal17/status/1439899388785033216?s=20)
+  2. Open the link to the YouTube video (https://www.youtube.com/watch?v=Fku7hi5kI-c) and sort comments by date
+  3. Flag commented by Krish in plain sight
