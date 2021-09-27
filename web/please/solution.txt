@@ -1,0 +1,12 @@
+flag: dsc{4ll-y0u-g0tt4-d0-15-r3qu35t-n1c3ly}
+passphrase: What'sTheMagicWord?
+base64(passphrase): V2hhdCdzVGhlTWFnaWNXb3JkPw==
+date: Mon, 05 Apr 2021 12:00:00 GMT
+
+Solution:
+    1) Enter Clancy as username
+    2) Change admin cookie to True
+    3) Change User-Agent Header in request to DeemaBrowser
+    4) Add Authorization Header in request, with data as "Basic <base64 encoded passphrase>"
+    5) Add Date Header in request for accurate time to appear
+    6) Change Date Header to exact date and time provided and aquire flag

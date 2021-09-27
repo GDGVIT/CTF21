@@ -1,0 +1,6 @@
+flag = dsc{xr_15_4m4z1ng}
+
+Solution:
+  1. Go to the link (https://www.youtube.com/watch?v=AVdpVHoBCh4) which is our XR DevCamp session.
+  2. Skip to approx the 1hr 15min mark or anytime after, to see all the live comments
+  3. Flag is commented in the live chat as plain as can be

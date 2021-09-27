@@ -1,0 +1,7 @@
+flag = dsc{welcome_to_deconstructf}
+
+Solution:
+  1. Inspect element and check out the "contain-flag" class.
+  2. In the css, you can see the ::after pseudo-class of this element.
+  3. There's a property for a caesar-cipher counter and the encrpyted flag.
+  4. Change the '0' to 'o' and run it through a decoder to get the final flag.

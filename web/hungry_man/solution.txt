@@ -1,0 +1,1 @@
+Make curl requests with the cookie set as "flag=<value>" you get md5 hashes. Decode them on CrackStation to get dsc{91v3_m3_4_h4ndfu1_0f_c00k135}

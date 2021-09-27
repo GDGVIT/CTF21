@@ -1,0 +1,17 @@
+flag = dsc{d0-y0u-th1nk-h3-s4w-us7132}
+
+Solution:
+    1) Slow down the gif by splitting it into frames
+    2) Disregard the color and the shape or the shapes, and take into account the position
+    3) Use Braille script to decode the message and obtain the flag
+
+Braille representation:
+⠙⠎⠉{⠙⠼⠚⠤⠽⠼⠚⠥⠤⠞⠓⠼⠁⠝⠅⠤⠓⠼⠉⠤⠎⠼⠙⠺⠤⠥⠎⠼⠛⠼⠁⠼⠉⠼⠃}
+
+Character representation for https://www.dcode.fr/braille-alphabet
+char(57)char(46)char(41)char(32) char(57)char(92)char(58)char(68)char(93)char(92)char(58)char(69)char(68)char(62)char(51)char(92)char(33)char(61)char(37)char(68)char(51)char(92)char(41)char(68)char(46)char(92)char(57)char(90)char(68)char(69)char(46)char(92)char(59)char(92)char(33)char(92)char(41)char(92)char(35)
+
+Warnings:
+The user needs to know how braille works.
+For example, J and 0 both have the same representation in Braille, but if there is a # before the character it becomes a number
+Official braille website: http://www.brailleauthority.org/learn/braillebasic.pdf
