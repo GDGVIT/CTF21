@@ -7,7 +7,7 @@ author: "z404"
 category: Forensics
 description: >
   Julia has come to you to ask for help. After spending too much time on his computer, Mike has gone insane, but no one knows why. 
-  Can you figure it out? Julia would really appreciate it. Here's how his desktop looked like.
+  Can you figure it out? Julia would really appreciate it. Here's how his desktop looked like. Weird how his system time doesn't change..
   <br> <br> Wrap the flag that you find with dsc{\<flag\>}!
 
 value: 450
