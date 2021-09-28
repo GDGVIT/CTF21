@@ -1,0 +1,1 @@
+1) Use sql injection script to guess the value being determined 

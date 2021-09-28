@@ -1,0 +1,4 @@
+1) Use ngrok and maildev to create SMTP server
+2) Use SMTP address and port 
+3) Create csv with fake email values
+4) Use jinja template injection on message to get shell access 
