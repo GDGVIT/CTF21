@@ -4,18 +4,7 @@ services:
     restart: always
     build: ./curly_fries_1/src
     ports:
-      - "6017:5000"
-    logging:
-        driver: "json-file"
-        options:
-            max-file: "3"
-            max-size: 10m
-
-  curly_fries_1_2:
-    restart: always
-    build: ./curly_fries_1/src
-    ports:
-      - "2053:5000"
+      - "8880:5000"
     logging:
         driver: "json-file"
         options:
@@ -26,7 +15,7 @@ services:
     restart: always
     build: ./curly_fries_2/src
     ports:
-      - "6240:5000"
+      - "2052:5000"
     logging:
         driver: "json-file"
         options:
@@ -37,7 +26,7 @@ services:
     restart: always
     build: ./curly_fries_3/src
     ports:
-      - "6420:5000"
+      - "2082:5000"
     logging:
         driver: "json-file"
         options:
@@ -48,7 +37,7 @@ services:
     restart: always
     build: ./heres_a_flag/src
     ports:
-      - "1842:80"
+      - "2086:80"
     logging:
         driver: "json-file"
         options:
@@ -59,7 +48,7 @@ services:
     restart: always
     build: ./hungry_man/hungryman
     ports:
-      - "1922:5000"
+      - "2095:5000"
     logging:
         driver: "json-file"
         options:
@@ -70,18 +59,7 @@ services:
     restart: always
     build: ./mega_mailer/dist/deploy
     ports:
-      - "6969:5000"
-    logging:
-        driver: "json-file"
-        options:
-            max-file: "3"
-            max-size: 10m
-
-  please:
-    restart: always
-    build: ./please/please
-    ports:
-      - "4421:5000"
+      - "8080:5000"
     logging:
         driver: "json-file"
         options:
