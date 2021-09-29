@@ -10,6 +10,17 @@ services:
         options:
             max-file: "3"
             max-size: 10m
+
+  curly_fries_1_2:
+    restart: always
+    build: ./curly_fries_1/src
+    ports:
+      - "2052:5000"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: "3"
+            max-size: 10m
   
   curly_fries_2:
     restart: always
