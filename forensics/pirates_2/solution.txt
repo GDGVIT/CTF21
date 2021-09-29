@@ -1,0 +1,8 @@
+1) Download files in pcap
+2) View instructions file
+3) From instructions file ,Find out that information is given in a subreddit
+4) Find 'reeds-distribution' subreddit and get password from wiki section
+5) Use password to decrypt New-network file
+6) From new network file get address of server
+7) From server download movie
+8) From movie video flag is in metadata
