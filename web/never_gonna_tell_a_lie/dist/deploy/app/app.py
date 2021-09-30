@@ -37,7 +37,7 @@ def admin_login_post():
         username = request.form.get("username")
         password = request.form.get("password")
         try:
-            user = query_db("SELECT * FROM users WHERE username = '{}' AND password = '{}'".format(username,password))
+            user = query_db("SELECT * FROM users WHERE username = '{}' AND password = '{}'".format(username,password),one=True)
         except:
             user = None
         if user == None:
