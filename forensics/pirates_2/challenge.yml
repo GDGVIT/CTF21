@@ -24,9 +24,6 @@ extra:
 image: null
 host: null
 
-# Optional settings
-connection_info: "3.108.1.193:6009"
-
 # Can be removed if unused
 attempts: 0
 

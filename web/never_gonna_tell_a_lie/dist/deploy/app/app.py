@@ -4,8 +4,7 @@ import os
 
 def get_db():
     db = getattr(g,'_database',None)
-    directory = os.getcwd()
-    uri = f'file:/{directory}/database.db?mode=ro'
+    uri = f'file:database.db?mode=ro'
     print(uri)
     if db is None:
         db = g._database = sqlite3.connect(uri, uri=True)
@@ -38,7 +37,7 @@ def admin_login_post():
         username = request.form.get("username")
         password = request.form.get("password")
         try:
-            user = query_db("SELECT * FROM users WHERE username = '{}' AND password = '{}'".format(username,password))
+            user = query_db("SELECT * FROM users WHERE username = '{}' AND password = '{}'".format(username,password),one=True)
         except:
             user = None
         if user == None:
