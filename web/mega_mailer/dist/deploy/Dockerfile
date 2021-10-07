@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apk --update add gcc build-base freetype-dev libpng-dev openblas-dev 
 RUN pip install --no-cache-dir flask
 RUN chmod -R 755 .
-RUN adduser --disabled-password user
+RUN adduser --no-create-home --disabled-password user
 USER user
 EXPOSE 5000/tcp
 CMD [ "python3" ,"-m","flask","run","--host=0.0.0.0"]
