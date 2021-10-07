@@ -8,7 +8,7 @@ This might be a difficult question, but I'm sure you can do it with your eyes cl
 ## Solution
 
 The gif seems to be flashing a lot of shapes and colors. The metadata of the gif doesn't show anything, so let's try something else.
-Splitting the gif with [this website]() gives you frames with shapes in 6 distinct positions. Suddenly, the description makes sense, the encryption is [braille](http://www.brailleauthority.org/learn/braillebasic.pdf)!
+Splitting the gif with [this website](https://ezgif.com/split) gives you frames with shapes in 6 distinct positions. Suddenly, the description makes sense, the encryption is [braille](http://www.brailleauthority.org/learn/braillebasic.pdf)!
 
 Each frame is a letter. Numbers are represented with 2 frames each, as that is how braille works.
 
