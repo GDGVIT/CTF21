@@ -1,4 +1,22 @@
-# DSC-CTF 21
+<p align="center">
+<a href="https://dscvit.com">
+	<img width="400" src="https://user-images.githubusercontent.com/56252312/159312411-58410727-3933-4224-b43e-4e9b627838a3.png#gh-light-mode-only" alt="GDSC VIT"/>
+</a>
+	<h2 align="center">DeconstruCT.F 2021</h2>
+	<h4 align="center">Repository of all Challenges made for CTF 2021</h4>
+</p>
+
+---
+[![Join Us](https://img.shields.io/badge/Join%20Us-Google%20Developer%20Student%20Clubs-red)](https://dsc.community.dev/vellore-institute-of-technology/)
+[![Discord Chat](https://img.shields.io/discord/760928671698649098.svg)](https://discord.gg/498KVdSKWR)
+
+
+## Features
+- [x]  Contains challenges for the CTF in 2021 with solutions
+- [x]  CI/CD pipelines to autodeploy challenges once pushed
+- [x]  Source Code, attachments and dependency files
+
+<br>
 
 Tips: [How to run a CTF](https://github.com/pwning/docs/blob/master/suggestions-for-running-a-ctf.markdown)
 
@@ -103,3 +121,91 @@ $ git clone https://github.com/CTFd/CTFd.git
 ```
 $ docker-compose up -d
 ```
+## Contributors
+
+<table>
+	<tr align="center">
+		<td>
+		Vishesh Bansal
+		<p align="center">
+			<img src = "https://avatars.githubusercontent.com/u/22132836?v=4" width="150" height="150" alt="Vishesh Bansal">
+		</p>
+			<p align="center">
+				<a href = "https://github.com/VisheshBansal">
+					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+				</a>
+			</p>
+		</td>
+        <td>
+		Krishap S
+		<p align="center">
+			<img src = "https://avatars.githubusercontent.com/u/49953521?v=4" width="150" height="150" alt="Krishap S">
+		</p>
+			<p align="center">
+				<a href = "https://github.com/Krishap-S">
+					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+				</a>
+			</p>
+		</td>
+        <td>
+
+Mayank Kumar
+
+<p  align="center">
+
+<img  src = "https://dscvit.com/images/techteam/mayank.jpg"  width="150"  height="150"  alt="Mayank Kumar">
+
+</p>
+
+<p  align="center">
+
+<a  href = "https://github.com/mayankkumar2">
+
+<img  src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg"  width="36"  height = "36"  alt="GitHub"/>
+
+</a>
+
+</p>
+
+</td>
+		<td>
+		Krish Chatterjie
+		<p align="center">
+			<img src = "https://avatars.githubusercontent.com/u/71811415?s=460&u=08d3940b7ee0105037b88175319ba7f09f83b159&v=4" width="150" height="150" alt="Krish Chatterjie">
+		</p>
+			<p align="center">
+				<a href = "https://github.com/KrishChatterjie">
+					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+				</a>
+			</p>
+		</td>
+        </tr>
+        <tr align="center">
+                <td>
+		Anish R.
+		<p align="center">
+			<img src = "https://avatars.githubusercontent.com/u/49672329?v=4" width="150" height="150" alt="Anish R">
+		</p>
+			<p align="center">
+				<a href = "https://github.com/z404">
+					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+				</a>
+			</p>
+		</td>
+                        <td>
+		Rithik Jain
+		<p align="center">
+			<img src = "https://avatars.githubusercontent.com/u/12408595?v=4" width="150" height="150" alt="Rithik Jain">
+		</p>
+			<p align="center">
+				<a href = "https://github.com/rithikjain">
+					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+				</a>
+			</p>
+		</td>
+	</tr>
+</table>
+
+<p align="center">
+	Made with :heart: by <a href="https://dscvit.com">GDSC-VIT</a>
+</p>
